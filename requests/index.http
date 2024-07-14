@@ -1,0 +1,29 @@
+###
+GET  /api/book HTTP/1.1
+Content-Type: application/json
+Host: localhost:3000
+
+###
+POST  /api/book/register HTTP/1.1
+Content-Type: application/json
+Host: localhost:3000
+
+{
+    "title": "Life is a mystery", 
+    "author": "John Doe", 
+    "category": "Fiction", 
+    "subcategory": "Thriller", 
+    "publish_date": "2021-05-12", 
+    "num_edition": 2, 
+    "editor": "Jane Smith", 
+    "available": true
+}
+
+###
+POST  /api/book/loan HTTP/1.1
+Content-Type: application/json
+Host: localhost:3000
+
+{
+    "title": "Life is a mystery"
+}

@@ -1,0 +1,15 @@
+1. Para iniciar o venv (virtual environment)
+
+- Digite no terminal 'source venv/bin/activate'
+OBS: no seu terminal deve aparecer (venv) antes do usuario
+
+2. Tente rodar a aplicacao seguindo o passo (3), caso nao de certo, instale os pacotes
+- Digite no terminal na raiz do projeto 'pip install -r requirements.txt'
+
+3. Para rodar a aplicacao
+- Digite no terminal 'make start'
+OBS: referente ao arquivo Makefile
+
+OBS: Os comandos acima foram demonstrados considerando um ambiente com base UNIX (Linux / MacOS)
+
+OBS: Plugin do VScode sugerido para testar o arquivo index.http -> Rest
