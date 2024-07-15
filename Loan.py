@@ -1,6 +1,6 @@
-from . import LoanLimitHandler
-from . import UserEligibilityHandler
-from . import BookAvailabilityHandler
+import LoanLimitHandler
+import UserEligibilityHandler
+import BookAvailabilityHandler
 
 class LoanManager:
 

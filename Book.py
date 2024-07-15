@@ -1,5 +1,5 @@
 import pandas as pd
-from . import BookCategory
+import BookCategory
 
 class Book:
     def __init__(self, title, author, category, subcategory, publish_date, num_edition, editor, available):

@@ -1,7 +1,7 @@
-from . import Library
-from . import Loan as LoanManager
-from . import Return as ReturnManager
-from . import Book
+import Library
+import Loan as LoanManager
+import Return as ReturnManager
+import Book
 
 class LibraryFacade:
     def __init__(self):

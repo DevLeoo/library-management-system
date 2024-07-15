@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify
 import pandas as pd
-from . import Book
-from . import LibraryFacade
+import Book
+import LibraryFacade
 from User import User
-from . import BookAvailabilityNotifier
+import BookAvailabilityNotifier
 
 app = Flask(__name__)
 
@@ -57,7 +57,7 @@ def rent_book():
     return jsonify({"name": "successfuly rented"}), 201
 
 @app.route('/api/book/return', methods=['POST'])
-def rent_book():
+def return_book():
     # data = {"title": "1984"}
     data = request.json
     

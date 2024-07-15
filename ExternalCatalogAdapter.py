@@ -1,4 +1,4 @@
-from . import Book
+import Book
 
 class ExternalCatalogAdapter:
     def __init__(self, external_catalog):
