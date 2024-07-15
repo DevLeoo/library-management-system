@@ -7,6 +7,16 @@ import BookAvailabilityNotifier
 
 app = Flask(__name__)
 
+@app.errorhandler(Exception)
+def handle_exception(error):
+    # Create a default response
+    response = {
+        "error": "An unexpected error occurred.",
+        "message": str(error)  # Optionally include the error message
+    }
+    return jsonify(response), 500  # Return a JSON response with a 500 status code
+
+
 @app.route('/api/book', methods=['GET'])
 def get_data():
     df = pd.read_csv("./persistance/books.csv")
