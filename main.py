@@ -12,9 +12,9 @@ def handle_exception(error):
     # Create a default response
     response = {
         "error": "An unexpected error occurred.",
-        "message": str(error)  # Optionally include the error message
+        "message": str(error) 
     }
-    return jsonify(response), 500  # Return a JSON response with a 500 status code
+    return jsonify(response), 500  
 
 
 @app.route('/api/book', methods=['GET'])
